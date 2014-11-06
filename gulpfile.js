@@ -26,7 +26,9 @@ var gulp = require( "gulp" ),
 	];
 
 /** Clean */
-gulp.task( "clean", require( "del" ).bind( null, [ ".tmp", "dist" ] ) );
+gulp.task( "clean", function(){
+	return require( "del" ).bind( null, [ ".tmp", "dist" ] );
+});
 
 /** Copy */
 gulp.task( "copy", function() {

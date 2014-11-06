@@ -2,7 +2,9 @@
 	"use strict";
 
 	$(function () {
-		// DOM ready, take it away
+		// empty
 	});
+
+
 
 } ( this, jQuery ));

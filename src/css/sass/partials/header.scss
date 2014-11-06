@@ -5,9 +5,23 @@
 
 
 // Header container
-.header {}
+.header {
+	padding-top: 70px;
+	.subheader { 
+		text-align:center; 
+		margin-top: 20px;
+	}
+}
 
 // Logo
 .logo {}
 
 .logo-img {}
+
+
+.mailing-link {
+	text-align: center;
+a {color: #6AB565;}
+	
+}
+
