@@ -6,7 +6,7 @@
 			<div class="row">
 				
 				<div class="col-sm-6 col-xs-12 planet-wrapper" >
-					<img src="<?php echo get_template_directory_uri(); ?>/img/planet.svg" alt="Planet">
+					<img src="<?php echo get_template_directory_uri(); ?>/img/planet.png" alt="Planet">
 				</div>
 				<div class="col-sm-6 col-xs-12 video-wrapper">
 					<div id="ytplayer"></div>
@@ -28,18 +28,18 @@ var player;
 function onYouTubePlayerAPIReady() {
 player = new YT.Player('ytplayer', {
   videoId: 'ylJh9DusVIA',
-  playerVars: { 'controls': 0 },
+  playerVars: { 'controls': 0, 'autoplay': 1 },
 });
 }  
-setTimeout(function() {
-	$(".video-wrapper").height( $(".planet-wrapper").height() );
-	// Load the IFrame Player API code asynchronously.
-	var tag = document.createElement('script');
-	tag.src = "https://www.youtube.com/player_api";
-	var firstScriptTag = document.getElementsByTagName('script')[0];
-	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-}, 2000);
 
+$('.planet-wrapper img').load(function(){
+		$(".video-wrapper").height( $(".planet-wrapper").height() );
+		// Load the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+		tag.src = "https://www.youtube.com/player_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+});
 </script>
 
 <?php get_footer(); ?>
