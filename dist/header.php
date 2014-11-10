@@ -41,7 +41,7 @@
 							<img src="<?php echo get_template_directory_uri(); ?>/img/cp_logo.svg" alt="Logo" class="logo-img">
 						</a>
 						<p class="subheader">Hey! We are working on something great. But in the meantime check out our video.</p>
-						<p class="mailing-link"><a href="https://xbanegas.wufoo.com/forms/z1cnfs391ml17c1/" onclick="window.open(this.href,  null, 'height=242, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">Click Here to Join Our Mailing List</a></p>
+						<p class="mailing-link"><a href="https://formlink3.wufoo.com/forms/z1cnfs391ml17c1/" onclick="window.open(this.href,  null, 'height=242, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false">Click Here to Join Our Mailing List</a></p>
 
 					<!-- </div> -->
 					</div>
